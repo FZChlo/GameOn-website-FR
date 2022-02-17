@@ -585,6 +585,14 @@ footer {
     .hero-text {
         text-align: center;
     }
+    #success-message,
+    span {
+        text-align: center;
+        margin-top: 2px;
+    }
+    .topnav a.icon {
+        margin-top: 2px;
+    }
 }
 
 @keyframes modalopen {

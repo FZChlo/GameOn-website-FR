@@ -40,7 +40,7 @@ closeModalBtn.forEach(elt => elt.addEventListener("click", closeModal));
 successCloseBtnElt.forEach(elt => elt.addEventListener("click", closeModal));
 
 // ---------- #2 ----------
-//Validate form event: SUBMIT
+//Validate form à l'event: SUBMIT
 formElt.forEach(elt => elt.addEventListener("submit", validate));
 
 
@@ -58,8 +58,6 @@ function editNav() {
     }
 }
 
-
-
 // launch modal form
 function launchModal() {
     modalElt.style.display = "block";
@@ -74,7 +72,7 @@ function closeModal() {
 }
 
 // ---------- #3 ----------
-// Display the success message on the modal 
+// Display the success message on the modal and responsive
 function displaySuccessMessage() {
     let currentHeight = formElt[0].offsetHeight;
 

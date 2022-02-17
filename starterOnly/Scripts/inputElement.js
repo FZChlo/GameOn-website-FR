@@ -4,8 +4,6 @@ class InputElement {
         this.errorMessage = errorMessage;
     }
 
-    // Methods ?
-
     getParent() {
         return this.elt.parentElement;
     }
