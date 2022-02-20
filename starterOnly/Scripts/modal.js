@@ -4,9 +4,9 @@ const modalBtnElt = document.querySelectorAll(".modal-btn");
 const formDataElt = document.querySelectorAll(".formData");
 
 const closeModalBtn = document.querySelectorAll("#close");
-const successMessageElt = document.querySelectorAll("#success-message");
+
 const formElt = document.querySelectorAll("#form");
-const successCloseBtnElt = document.querySelectorAll("#success-close-btn");
+
 
 
 
@@ -37,7 +37,7 @@ modalBtnElt.forEach((btn) => btn.addEventListener("click", launchModal));
 // ---------- #1 ----------
 // close modal event
 closeModalBtn.forEach(elt => elt.addEventListener("click", closeModal));
-successCloseBtnElt.forEach(elt => elt.addEventListener("click", closeModal));
+
 
 // ---------- #2 ----------
 //Validate form à l'event: SUBMIT
@@ -68,17 +68,6 @@ function launchModal() {
 // close modal form
 function closeModal() {
     modalElt.style.display = "none";
-    successMessageElt[0].style.display = "none";
-}
-
-// ---------- #3 ----------
-// Display the success message on the modal and responsive
-function displaySuccessMessage() {
-    let currentHeight = formElt[0].offsetHeight;
-
-    formElt[0].style.display = "none";
-    successMessageElt[0].style.display = "flex";
-    successMessageElt[0].style.height = currentHeight + "px";
 }
 
 // check if firstname input is valid and gives feedback
@@ -183,7 +172,7 @@ function validate(e) {
 
     let isFormValid = first && last && email && birthdate && quantity && city && conditions;
 
-    if (isFormValid) displaySuccessMessage();
+    if (isFormValid) window.alert("Merci ! Votre réservation a été reçue.") & closeModal();
 }
 
 // ---------- UTILS ----------
