@@ -172,7 +172,7 @@ function validate(e) {
 
     let isFormValid = first && last && email && birthdate && quantity && city && conditions;
 
-    if (isFormValid) window.alert("Merci ! Votre réservation a été reçue.") & closeModal();
+    if (isFormValid) window.alert("Merci ! Votre réservation a été reçue.") & closeModal() & document.forms['form'].reset();;
 }
 
 // ---------- UTILS ----------
