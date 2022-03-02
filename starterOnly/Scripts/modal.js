@@ -3,8 +3,9 @@ const modalElt = document.querySelector(".bground");
 const modalBtnElt = document.querySelectorAll(".modal-btn");
 const formDataElt = document.querySelectorAll(".formData");
 
+// ---------- #1 ----------
 const closeModalBtn = document.querySelectorAll("#close");
-
+// ---------- #2 ----------
 const formElt = document.querySelectorAll("#form");
 
 
@@ -64,12 +65,15 @@ function launchModal() {
     formElt[0].style.display = "block";
 }
 
-// ---------- #2 ----------
+// ---------- #1 ----------
 // close modal form
 function closeModal() {
     modalElt.style.display = "none";
 }
 
+
+
+// ---------------------------- #3 --------------------------------------
 // check if firstname input is valid and gives feedback
 // @returns { boolean }
 
@@ -155,7 +159,9 @@ function removeOrDisplayError(elt, isValid) {
     isValid ? elt.removeDisplayError() : elt.displayError();
 }
 
-// ---------- #4 ---------- 
+
+
+// -------------------------------- #4 ----------------------
 // Check the validity of the whole form
 //@param e submit event result
 

@@ -1,3 +1,8 @@
+// ---------- #3 ----------
+// Create InputElement CLASS
+// and getParent, displayError, removeDisplayError METHODE
+// Than use this in modal.js for check if inputs are valid
+
 class InputElement {
     constructor(elt, errorMessage) {
         this.elt = elt;
